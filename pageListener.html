@@ -1,0 +1,37 @@
+<!DOCTYPE = HTML>
+
+<html>
+
+
+	<head>
+		<!--- Use google's CDN, which is hosting jquery --->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+		Listening..
+
+	<script>
+
+		//Utilize JQuery to listen for mouse position
+		$("body").mousemove(function(e) {
+		    document.mPos.X.value = e.pageX;
+		    document.mPos.Y.value = e.pageY;
+		})
+
+
+
+	</script>
+
+
+	
+	<body>
+		<!--- The form which has two text boxes for the X and Y position of mouse on the web page--->
+		<form name="mPos">
+			POSX: <input type="text" name="X">
+				<br>
+			POSY: <input type="text" name="Y">
+				<br>
+		</form>
+	</body>
+
+
+</html>
